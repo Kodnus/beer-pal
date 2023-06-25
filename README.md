@@ -42,3 +42,8 @@ Realistically, this has taken me around `25 hours` to complete. With a few issue
 - My initial thought was that I would use axious in my DetailedViewPage to call the API with the ID given in my params. This mean that I was unable to view my own created beer, because they were not present in the API call, of course.
   The issue with the way I handle the beerArray is that my App serves the array to HomePage and in HomePage I manipulate the array as it is in HomePage, and when I click a button to view a dewtailed beer, I am sent, through props, the original array, which is not manipulated
 - This gives issue to adding favourites on another page, which I had in mind as well.
+
+2. Issue with the BeerCard layout, if you name is long enough, it will expand the description slightly as well, making it seem wider than other descriptions, where the card has a short name
+
+- Mostly present on mobile view
+- The wider image can also make the content appear more mushed together. Having the same type of picture will negate this.

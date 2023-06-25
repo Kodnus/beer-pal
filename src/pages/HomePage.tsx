@@ -78,6 +78,7 @@ const HomePage: React.FC<ChildProps> = ({ beersArray }) => {
       id: newId,
     };
 
+    console.log(updatedBeer);
     //Resets the data in our useState
     setBeers((prevBeers) => [updatedBeer, ...prevBeers]);
     setNewBeer({
@@ -125,7 +126,7 @@ const HomePage: React.FC<ChildProps> = ({ beersArray }) => {
               ></RegularInput>
               <RegularInput
                 value={newBeer.abv}
-                changeCallback={handleInputChange("name")}
+                changeCallback={handleInputChange("abv")}
                 label={"Alcohol percent/abv"}
               ></RegularInput>
               <RegularInput

@@ -56,9 +56,9 @@ const BeerCard: React.FC<BeerCardProps> = ({
           detailedView && "sm:h-[23rem]"
         }`}
       >
-        <img src={image_url} className="h-[10rem] sm:h-[16rem]" />
+        <img alt={name} src={image_url} className="h-[10rem] sm:h-[16rem]" />
         <div className="flex flex-col justify-between">
-          <div className="w-auto">
+          <div className="">
             <IonCardHeader className="pt-0">
               <IonCardTitle>{name}</IonCardTitle>
               <IonCardSubtitle>{tagline}</IonCardSubtitle>
@@ -70,8 +70,8 @@ const BeerCard: React.FC<BeerCardProps> = ({
             <p className="self-center">{"Alcohol: " + abv + "%"}</p>
             <p className="self-center">Bitterness: {ibu}</p>
             {!detailedView && (
-              <IonButton>
-                <Link to={`/detailed/${beerID}`}>More data</Link>
+              <IonButton className="w-[4rem]">
+                <Link to={`/detailed/${beerID}`}>More</Link>
               </IonButton>
             )}
           </div>
