@@ -29,7 +29,6 @@ Realistically, this has taken me around `25 hours` to complete. With a few issue
 - My BeerCard is reusable in the way that it takes a prop for the list that renders it. If this prop (`detailedView`) is true, then the BeerCard will render additional data.
 - In addition, the BeerList also takes this prop, so that BeerList also is reusable. If not, I would have to create a different list, for the Beer that is in detailed view.
 - User is able to go back by clicking the "My Beer Pal" in the top Header, which is also a component. If adding new pages, it will be easy to add new routing in the Header alongside the App.
--
 
 # Priorities
 
